@@ -1,0 +1,34 @@
+<section >
+    <mat-card>
+        <mat-card-title>Add New Grade</mat-card-title>
+    <form fxLayout="column" fxLayoutGap = "15px" fxLayoutAlign="center center"      
+    [formGroup] = "addGradeForm" (ngSubmit)="addGrade()"    >
+        <mat-form-field>
+            <input type="text" matInput placeholder="Grade" 
+            formControlName="Grade"  required  >
+        </mat-form-field>       
+        <!--mat-form-field>
+                <input type="text" matInput placeholder="Board Name" 
+                formControlName="BoardName" required   >
+        </mat-form-field-->
+        <mat-form-field appearance="fill">
+            <mat-label>Board</mat-label>
+            <mat-select formControlName="BoardName">
+              <mat-option *ngFor="let board of boardName" value="{{board.BoardName}}">
+                {{board.BoardName}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        <mat-form-field>
+            <input type="text" matInput placeholder="Create At" 
+            formControlName="CreateAt"            >
+        </mat-form-field>   
+        <!--mat-form-field>
+            <input type="text" matInput placeholder="UpdatedAt" 
+            formControlName="UpdatedAt"            >
+        </mat-form-field-->   
+    <button type="submit" mat-raised-button color="primary" [disabled]="addGradeForm.invalid" >Add</button>
+    </form>
+    </mat-card>
+</section>

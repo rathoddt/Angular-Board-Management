@@ -1,0 +1,25 @@
+<section >
+    <mat-card>
+        <mat-card-title>Update Board</mat-card-title>
+    <form fxLayout="column" fxLayoutGap = "15px" fxLayoutAlign="center center"      
+    [formGroup] = "updateBoardForm"   (ngSubmit)="updateBoard()"  >
+        <mat-form-field>
+                <input type="text" matInput placeholder="Board Name" 
+                formControlName="BoardName" required   >
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Board description" 
+            formControlName="BoardDesc"            >
+        </mat-form-field>   
+        <!--mat-form-field>
+            <input type="text" matInput disabled placeholder="Create At" 
+            formControlName="CreateAt"            >
+        </mat-form-field-->   
+        <mat-form-field>
+            <input type="text" matInput placeholder="UpdatedAt" 
+            formControlName="UpdatedAt"            >
+        </mat-form-field>   
+    <button type="submit" mat-raised-button color="primary" [disabled]="updateBoardForm.invalid" >Update</button>
+    </form>
+    </mat-card>
+</section>

@@ -1,0 +1,124 @@
+{
+  "board": [
+    {
+      "id": 1,
+      "BoardName": "Aurangabad",
+      "BoardDesc": "This is Abad board",
+      "CreateAt": "10-02-2021",
+      "UpdatedAt": "11-03-2021"
+    },
+    {
+      "BoardName": "Mumbai",
+      "BoardDesc": "Bombay board",
+      "CreateAt": "26/03/2021, 3:36 PM",
+      "UpdatedAt": "26/03/2021, 3:36 PM",
+      "id": 3
+    },
+    {
+      "BoardName": "Nagpur",
+      "BoardDesc": "Nagpur Board",
+      "CreateAt": "26/03/2021, 4:18 PM",
+      "UpdatedAt": "27/03/2021, 3:57 PM",
+      "id": 4
+    },
+    {
+      "BoardName": "Dhule",
+      "BoardDesc": "North Maharashtra",
+      "CreateAt": "26/03/2021, 4:38 PM",
+      "UpdatedAt": "26/03/2021, 4:38 PM",
+      "id": 8
+    },
+    {
+      "BoardName": "Ahemad Nagar",
+      "BoardDesc": "Nagar Division",
+      "CreateAt": "26/03/2021, 4:39 PM",
+      "UpdatedAt": "27/03/2021, 3:59 PM",
+      "id": 9
+    },
+    {
+      "BoardName": "Pune",
+      "BoardDesc": "Pune Main Board",
+      "CreateAt": "27/03/2021, 6:40 PM",
+      "UpdatedAt": "27/03/2021, 6:40 PM",
+      "id": 10
+    }
+  ],
+  "grade": [
+    {
+      "id": 1,
+      "Grade": "A",
+      "BoardName": "Aurangabad",
+      "CreateAt": "10-02-2021",
+      "UpdatedAt": "11-03-2021"
+    },
+    {
+      "Grade": "E",
+      "BoardName": "Dhule",
+      "CreateAt": "27/03/2021, 6:12 PM",
+      "UpdatedAt": "27/03/2021, 6:39 PM",
+      "id": 4
+    },
+    {
+      "Grade": "C",
+      "BoardName": "Dhule",
+      "CreateAt": "27/03/2021, 6:19 PM",
+      "UpdatedAt": "27/03/2021, 6:19 PM",
+      "id": 5
+    },
+    {
+      "Grade": "D",
+      "BoardName": "Dhule",
+      "CreateAt": "27/03/2021, 6:19 PM",
+      "UpdatedAt": "27/03/2021, 6:19 PM",
+      "id": 6
+    },
+    {
+      "Grade": "A",
+      "BoardName": "Ahemad Nagar",
+      "CreateAt": "27/03/2021, 6:39 PM",
+      "UpdatedAt": "27/03/2021, 6:39 PM",
+      "id": 7
+    },
+    {
+      "Grade": "A",
+      "BoardName": "Pune",
+      "CreateAt": "27/03/2021, 6:41 PM",
+      "UpdatedAt": "27/03/2021, 6:41 PM",
+      "id": 8
+    },
+    {
+      "Grade": "D",
+      "BoardName": "Nagpur",
+      "CreateAt": "27/03/2021, 6:42 PM",
+      "UpdatedAt": "27/03/2021, 6:42 PM",
+      "id": 9
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-server 2",
+      "author": "Monika"
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "author": "Jeta"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
