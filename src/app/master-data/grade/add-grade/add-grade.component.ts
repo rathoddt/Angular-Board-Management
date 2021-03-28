@@ -31,8 +31,7 @@ export class AddGradeComponent implements OnInit {
     this.board.addGrade(this.addGradeForm.value).subscribe((result)=>{
       const formValue = this.addGradeForm.value;
       alert('Grade '+formValue.Grade +" for "+formValue.BoardName+ " is added succesfully")
-      this.router.navigateByUrl('/grade');
-      
+      this.router.navigateByUrl('/grade');      
     })
   }
 

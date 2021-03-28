@@ -1,0 +1,50 @@
+<section >
+    <mat-card>
+        <mat-card-title>Add New Subject</mat-card-title>
+    <form fxLayout="column" fxLayoutGap = "15px" fxLayoutAlign="center center"      
+    [formGroup] = "addSubjectForm" (ngSubmit)="addSubject()"    >
+        <mat-form-field>
+            <input type="text" matInput placeholder="Subject" 
+            formControlName="Subject" required   >
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Board</mat-label>
+            <mat-select formControlName="BoardName"     
+            (selectionChange)="getGrade($event.value)" >
+              <mat-option *ngFor="let board of uniqueBoard"  value="{{board}}">
+                {{board}} 
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+          <mat-form-field appearance="fill">
+            <mat-label>Grade</mat-label>
+            <mat-select formControlName="Grade"     
+            >
+              <mat-option *ngFor="let grade of grades" value="{{grade}}">
+                {{grade}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          
+
+
+
+
+        <!--mat-form-field>
+            <input type="text" matInput placeholder="Grade" 
+            formControlName="Grade"            >
+        </mat-form-field-->   
+        <mat-form-field>
+            <input type="text" matInput placeholder="Create At" 
+            formControlName="CreateAt"            >
+        </mat-form-field>   
+        <!--mat-form-field>
+            <input type="text" matInput placeholder="UpdatedAt" 
+            formControlName="UpdatedAt"            >
+        </mat-form-field-->   
+    <button type="submit" mat-raised-button color="primary" [disabled]="addSubjectForm.invalid" >Add Subject</button>
+    </form>
+    </mat-card>
+</section>

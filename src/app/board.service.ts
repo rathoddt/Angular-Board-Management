@@ -6,6 +6,7 @@ import {HttpClient} from '@angular/common/http'
 export class BoardService {
 board_url="http://localhost:3000/board"
 grade_url="http://localhost:3000/grade"
+subject_url="http://localhost:3000/subject"
   constructor(private http:HttpClient) { }
   getBoard(){
     return this.http.get(this.board_url)
@@ -39,5 +40,19 @@ grade_url="http://localhost:3000/grade"
   updateGrade(id, data){
     return this.http.put(`${this.grade_url}/${id}`, data)
   }
+  getSubject(){
+    return this.http.get(this.subject_url)
+  }
+  getGradeForBoard(board){
+    //console.log(this.http.get(`${this.grade_url}?BoardName=${board}`))
+  ////GET /posts?title=json-server&author=typicode
+  //GET /posts?id=1&id=2
+  //GET /comments?author.name=typicode
+  }
+  addSubject(data){
+    return this.http.post(this.subject_url, data) 
+  }
+
+  
 
 }

@@ -92,6 +92,55 @@
       "CreateAt": "27/03/2021, 6:42 PM",
       "UpdatedAt": "27/03/2021, 6:42 PM",
       "id": 9
+    },
+    {
+      "Grade": "B",
+      "BoardName": "Pune",
+      "CreateAt": "28/03/2021, 10:28 AM",
+      "UpdatedAt": "28/03/2021, 10:28 AM",
+      "id": 10
+    }
+  ],
+  "subject": [
+    {
+      "id": 1,
+      "Subject": "Computer Science",
+      "BoardName": "Aurangabad",
+      "Grade": "A",
+      "CreateAt": "10-02-2021",
+      "UpdatedAt": "11-03-2021"
+    },
+    {
+      "Subject": "History",
+      "BoardName": "Mumbai",
+      "Grade": "B",
+      "CreateAt": "26/03/2021, 3:36 PM",
+      "UpdatedAt": "26/03/2021, 3:36 PM",
+      "id": 3
+    },
+    {
+      "Subject": "Art",
+      "BoardName": "Pune",
+      "Grade": "A",
+      "CreateAt": "28/03/2021, 10:27 AM",
+      "UpdatedAt": "28/03/2021, 10:27 AM",
+      "id": 4
+    },
+    {
+      "Subject": "Commerce",
+      "BoardName": "Pune",
+      "Grade": "B",
+      "CreateAt": "28/03/2021, 10:28 AM",
+      "UpdatedAt": "28/03/2021, 10:28 AM",
+      "id": 5
+    },
+    {
+      "Subject": "Philosophy",
+      "BoardName": "Dhule",
+      "Grade": "C",
+      "CreateAt": "28/03/2021, 11:04 AM",
+      "UpdatedAt": "28/03/2021, 11:04 AM",
+      "id": 6
     }
   ],
   "posts": [

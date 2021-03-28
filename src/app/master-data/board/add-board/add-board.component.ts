@@ -12,13 +12,9 @@ import { Router } from '@angular/router';
 export class AddBoardComponent implements OnInit {
   addBoardForm:FormGroup
   
-  showMsg= false;
+  
   constructor(private board: BoardService, private router : Router) {    
    }
-
-  
-
-    
 
   ngOnInit(): void {
     this.addBoardForm=new FormGroup({

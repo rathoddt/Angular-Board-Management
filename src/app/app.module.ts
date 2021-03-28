@@ -27,6 +27,7 @@ import { AddBoardComponent } from './master-data/board/add-board/add-board.compo
 import { UpdateBoardComponent } from './master-data/board/update-board/update-board.component';
 import { AddGradeComponent } from './master-data/grade/add-grade/add-grade.component';
 import { UpdateGradeComponent } from './master-data/grade/update-grade/update-grade.component';
+import { NewSubjectComponent } from './master-data/subject/new-subject/new-subject.component';
 
 
 
@@ -40,7 +41,8 @@ import { UpdateGradeComponent } from './master-data/grade/update-grade/update-gr
     AddBoardComponent,
     UpdateBoardComponent,
     AddGradeComponent,
-    UpdateGradeComponent,    
+    UpdateGradeComponent,
+    NewSubjectComponent,    
     
   ],
   imports: [

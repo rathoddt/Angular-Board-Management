@@ -8,6 +8,7 @@ import { SubjectComponent } from './master-data/subject/subject.component';
 import { UpdateBoardComponent } from './master-data/board/update-board/update-board.component';
 import { AddGradeComponent } from './master-data/grade/add-grade/add-grade.component';
 import { UpdateGradeComponent } from './master-data/grade/update-grade/update-grade.component';
+import { NewSubjectComponent } from './master-data/subject/new-subject/new-subject.component';
 
 const routes: Routes = [
   {path:'', component:DashboardComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'update-board/:id',component:UpdateBoardComponent},
   {path:'add-grade', component:AddGradeComponent},
   {path:'update-grade/:id',component:UpdateGradeComponent},
+  {path:'add-subject', component:NewSubjectComponent},
 ];
 
 @NgModule({
